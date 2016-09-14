@@ -15,25 +15,31 @@ public class labSix {
 		int indexOfVowel=-1;
 	
 		//determine if first letter is a vowel
-		for(int i=0;i<userInput.length(); i++){
+		
 			//if letter is a vowel just add say
-			if(userInput.charAt(i)=='a'||userInput.charAt(i)=='e'||userInput.charAt(i)=='i'||userInput.charAt(i)=='o'||userInput.charAt(i)=='u'){
-				System.out.println(userInput +"say");
+			if(userInput.charAt(0)=='a'||userInput.charAt(0)=='e'||userInput.charAt(0)=='i'||userInput.charAt(0)=='o'||userInput.charAt(0)=='u'){
+				System.out.println(userInput +"way");
 			}else{
 			//if starts with consent		
 				//loop through user input
 				for(int x=0;x<=userInput.length(); x++){
-					if(userInput.charAt(i)=='a'||userInput.charAt(i)=='e'||userInput.charAt(i)=='i'||userInput.charAt(i)=='o'||userInput.charAt(i)=='u'){
+					if(userInput.charAt(x)=='a'||userInput.charAt(x)=='e'||userInput.charAt(x)=='i'||userInput.charAt(x)=='o'||userInput.charAt(x)=='u'){
 					indexOfVowel=x;	
 					break;
 					}
-				
+				}
+			//move the value of index vowel
+			String backSentence = userInput.substring(indexOfVowel);
+			//explain here
+			String frontSentence = userInput.substring(0, indexOfVowel);
+			//print statement
+			System.out.println(backSentence + frontSentence + "ay");
 			
 					
-				}
+				
 				
 			}			
-		}
+		
 	}
 }
 
