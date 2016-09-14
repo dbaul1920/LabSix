@@ -7,33 +7,30 @@ public class labSix {
 		
 		// User greeting
 		//User input
+		System.out.println("Welcome to the pig latin translator!"+"\n"+"Enter a line to be translated:");
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter an integer that's greater than 0 but less than 10: ");
-		String word =input.nextLine();
+		String userInput =input.next();
+		userInput.toLowerCase();
 		
-		// Translator machine major if statement
-		
-
-		//check for vowel
-		for(int i>0; i<word.length();i++){
-			//index 0	
-			boolean vowel=true;
-						}
-		Object vowel;
-		if(vowel.equals(true))
-				{
-					// Then
-					//Add "way" to the end of the user input
-					//Print final value
-
-				}else{
-					//collect all letters (that are not vowels) before the first vowel
-						//store value of collection
-						//delete letters from word
-						//store value of remaining letters
-					//add collection to the end of remaining user input
-					//add "ay" to the end
-					//Print final value
+	
+		//define characters of vowel
+	
+	
+		for(int i=0;i<userInput.length(); i++){
+			if(userInput.charAt(i)=='a'||userInput.charAt(i)=='e'||userInput.charAt(i)=='i'||userInput.charAt(i)=='o'||userInput.charAt(i)=='u'){
+				System.out.println(userInput +"say");
 			}
+		
+		}}
+		
+		 //
+//				{
+//					// Then
+//					//Add "way" to the end of the user input
+//					//Print final value
+//					x
+//				
+//			}
 
+//}
 }
